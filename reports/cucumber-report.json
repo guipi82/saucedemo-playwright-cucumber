@@ -1,0 +1,79 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "saucedemo-login;erfolgreicher-login-mit-gültigen-zugangsdaten",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Erfolgreicher Login mit gültigen Zugangsdaten",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4443280200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "ich öffne die Saucedemo Login-Seite",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2294616899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ich mich mit Benutzername \"standard_user\" und Passwort \"secret_sauce\" einlogge",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3520405599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "sehe ich die Produktübersicht",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53635000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 901848599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "saucedemo-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Saucedemo Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
