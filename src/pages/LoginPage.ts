@@ -16,4 +16,8 @@ export class LoginPage {
   async verifyProductsPage() {
     await expect(this.page.locator(".title")).toHaveText("Products");
   }
+
+  async verifyLoginError() {
+    await expect(this.page.locator('[data-test="error"]')).toBeVisible();
+  }
 }

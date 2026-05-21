@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4443280200
+              "duration": 5291007700
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2294616899
+              "duration": 2614438700
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3520405599
+              "duration": 4146912800
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53635000
+              "duration": 43264299
             }
           },
           {
@@ -61,7 +61,73 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 901848599
+              "duration": 1031439699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "saucedemo-login;ungültiger-login",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Ungültiger Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1908774399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "ich öffne die Saucedemo Login-Seite",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1850493699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "ich mich mit Benutzername \"locked_out_user\" und Passwort \"secret_sauce\" einlogge",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3206237399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "sehe ich eine Login-Fehlermeldung",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36111499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 600368500
             }
           }
         ],

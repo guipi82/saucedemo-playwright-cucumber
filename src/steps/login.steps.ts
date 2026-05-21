@@ -19,3 +19,8 @@ Then("sehe ich die Produktübersicht", async function (this: CustomWorld) {
   const loginPage = new LoginPage(this.page);
   await loginPage.verifyProductsPage();
 });
+
+Then("sehe ich eine Login-Fehlermeldung", async function (this: CustomWorld) {
+  const loginPage = new LoginPage(this.page);
+  await loginPage.verifyLoginError();
+});
