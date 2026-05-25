@@ -27,8 +27,8 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Tests ausführen
-          run: npm run test:parallel
-          env:
+        run: npm run test:parallel
+        env:
             PARALLEL: 1
             HEADLESS: true
 
