@@ -3,6 +3,8 @@ const reporter = require("multiple-cucumber-html-reporter");
 reporter.generate({
   jsonDir: "reports",
   reportPath: "reports/html",
+  reportName: "Saucedemo Playwright Cucumber Report",
+  pageTitle: "Saucedemo Test Report",
   metadata: {
     browser: {
       name: "chromium"
@@ -20,3 +22,4 @@ reporter.generate({
     ]
   }
 });
+

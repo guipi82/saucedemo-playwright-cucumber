@@ -27,7 +27,10 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Tests ausführen
-        run: npm test
+          run: npm run test:parallel
+          env:
+            PARALLEL: 1
+            HEADLESS: true
 
       - name: HTML Report erzeugen
         run: npm run report
@@ -37,3 +40,17 @@ jobs:
         with:
           name: cucumber-html-report
           path: reports/html
+
+      # - name: GitHub Pages konfigurieren
+      #   if: always() && github.ref == 'refs/heads/main'
+      #   uses: actions/configure-pages@v5
+
+      # - name: Pages Artifact vorbereiten
+      #   if: always() && github.ref == 'refs/heads/main'
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: reports/html
+
+      # - name: Report auf GitHub Pages veröffentlichen
+      #   if: always() && github.ref == 'refs/heads/main'
+      #   uses: actions/deploy-pages@v4

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js",
+    "test:parallel": "cucumber-js --parallel 1",
     "report": "node report.js"
   },
   "keywords": [],
@@ -21,3 +22,4 @@
     "typescript": "^6.0.3"
   }
 }
+
